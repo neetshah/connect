@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/email"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginEnd="85dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/pass"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginEnd="85dp"
@@ -36,10 +36,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/login"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginEnd="85dp"
@@ -50,10 +50,10 @@
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/createacc"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_marginEnd="85dp"
@@ -64,6 +64,6 @@
         android:text="@string/createacc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/login" />
 
 </android.support.constraint.ConstraintLayout>
