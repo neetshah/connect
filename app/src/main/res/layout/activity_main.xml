@@ -7,28 +7,25 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edittext_email"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="389dp"
         android:layout_marginEnd="85dp"
         android:layout_marginLeft="84dp"
         android:layout_marginRight="85dp"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="77dp"
-        android:hint="@string/login"
+        android:layout_marginTop="260dp"
         android:ems="10"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/pass"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="334dp"
         android:layout_marginEnd="85dp"
         android:layout_marginLeft="84dp"
         android:layout_marginRight="85dp"
@@ -37,25 +34,36 @@
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_email" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_login"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="284dp"
         android:layout_marginEnd="85dp"
         android:layout_marginLeft="84dp"
         android:layout_marginRight="85dp"
         android:layout_marginStart="84dp"
         android:layout_marginTop="2dp"
-        android:hint="@string/username"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <Button
+        android:id="@+id/button_createacc"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/createacc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
 
 </android.support.constraint.ConstraintLayout>
