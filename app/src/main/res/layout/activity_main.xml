@@ -16,8 +16,8 @@
         android:layout_marginRight="85dp"
         android:layout_marginStart="84dp"
         android:layout_marginTop="77dp"
-        android:hint="@string/login"
         android:ems="10"
+        android:hint="@string/username"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,10 +52,10 @@
         android:layout_marginRight="85dp"
         android:layout_marginStart="84dp"
         android:layout_marginTop="2dp"
-        android:hint="@string/username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:text="@string/login" />
 
 </android.support.constraint.ConstraintLayout>
