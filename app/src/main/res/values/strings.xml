@@ -7,4 +7,6 @@
     <string name="test">Test</string>
     <string name="send">Send</string>
     <string name="message">Type</string>
+    <string name="register">Register</string>
+    <string name="confirmpass">Confirm Password</string>
 </resources>
