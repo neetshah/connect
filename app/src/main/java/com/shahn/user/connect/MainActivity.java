@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToContact() {
-        Intent intent = new Intent(this, Contact.class);
+        Intent intent = new Intent(this, Chat.class);
         startActivity(intent);
 
     }
