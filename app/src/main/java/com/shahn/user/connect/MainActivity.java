@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText email;
     private EditText pass;
     private Button login;
-    private Button createacc;
+    private Button createacc1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +32,19 @@ public class MainActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         pass = findViewById(R.id.pass);
         login = findViewById(R.id.login);
-        createacc = findViewById(R.id.createacc);
-
+        createacc1 = findViewById(R.id.createacc);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startSignIn();
+            }
+        });
+
+        createacc1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToRegister();
             }
         });
 
@@ -66,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToContact() {
         Intent intent = new Intent(this, Chat.class);
+        startActivity(intent);
+
+    }
+
+    public void goToRegister() {
+        Intent intent = new Intent(this, Register.class);
         startActivity(intent);
 
     }
