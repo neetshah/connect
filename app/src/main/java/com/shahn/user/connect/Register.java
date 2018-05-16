@@ -61,6 +61,7 @@ public class Register extends AppCompatActivity {
                                 Log.e(TAG, "createUserWithEmail:success");
                                 //FirebaseUser user = mAuth.getCurrentUser();
                                 Toast.makeText(Register.this, "Account Registration Successful", Toast.LENGTH_LONG).show();
+
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.e(TAG, "createUserWithEmail:failure", task.getException());
@@ -68,6 +69,10 @@ public class Register extends AppCompatActivity {
                             }
                         }
                     });
+        }
+        else {
+            Log.e(TAG, "createUserWithEmail:failure", task.getException());
+            Toast.makeText(Register.this, "Account Registration Failed", Toast.LENGTH_LONG).show();
         }
     }
 
