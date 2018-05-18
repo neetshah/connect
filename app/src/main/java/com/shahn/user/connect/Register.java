@@ -55,7 +55,6 @@ public class Register extends AppCompatActivity {
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            Log.e(TAG, "LOOOOOOOOOOOOOOL");
                             if (task.isSuccessful()) {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.e(TAG, "createUserWithEmail:success");
@@ -71,7 +70,7 @@ public class Register extends AppCompatActivity {
                     });
         }
         else {
-            Log.e(TAG, "createUserWithEmail:failure", task.getException());
+            Log.e(TAG, "createUserWithEmail:failure");
             Toast.makeText(Register.this, "Account Registration Failed", Toast.LENGTH_LONG).show();
         }
     }
