@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
                             Toast.makeText(MainActivity.this, "Log In Successful", Toast.LENGTH_SHORT).show();
-                            goToContact();
+                            goToChat();
                         }
                         else {
                             Toast.makeText(MainActivity.this, "Log In Error", Toast.LENGTH_SHORT).show();
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    public void goToContact() {
+    public void goToChat() {
         Intent intent = new Intent(this, Chat.class);
         startActivity(intent);
 

@@ -9,4 +9,5 @@
     <string name="message">Type</string>
     <string name="register">Register</string>
     <string name="confirmpass">Confirm Password</string>
+    <string name="name">Name of Contact</string>
 </resources>
